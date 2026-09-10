@@ -58,6 +58,9 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
                 NotificationManager.IMPORTANCE_HIGH
             )
 
+            channel.enableVibration(true)
+            channel.vibrationPattern = longArrayOf(0, 500, 200, 500)
+
             val notificationManager =
                 getSystemService(Context.NOTIFICATION_SERVICE)
                         as NotificationManager
