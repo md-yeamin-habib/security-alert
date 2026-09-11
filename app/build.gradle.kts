@@ -51,7 +51,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
 
-    // Firebase
+    implementation("androidx.compose.material:material-icons-extended")
     implementation(platform("com.google.firebase:firebase-bom:34.2.0"))
     implementation("com.google.firebase:firebase-messaging")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
